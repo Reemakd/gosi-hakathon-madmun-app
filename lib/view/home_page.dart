@@ -6,8 +6,8 @@ import 'package:gosi_hakathon_madmun_app/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
 
-class Iphone1415ProOneScreen extends StatelessWidget {
-  const Iphone1415ProOneScreen({Key? key})
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key})
       : super(
           key: key,
         );
@@ -75,7 +75,7 @@ class Iphone1415ProOneScreen extends StatelessWidget {
     return CustomAppBar(
       leadingWidth: 56.h,
       leading: AppbarLeadingImage(
-        imagePath: ImageConstant.imgArrowDown,
+        imagePath: ImageConstant.imageSideMenu,
         margin: EdgeInsets.only(
           left: 31.h,
           top: 22.v,

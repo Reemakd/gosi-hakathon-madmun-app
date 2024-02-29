@@ -23,6 +23,8 @@ flutter:
 
   assets:
     - assets/images/image_not_found.png
-    - assets/images/img_arrow_down.svg
+    - assets/images/side-menu-icon.png
     - assets/images/img_growth_1.png
     - assets/images/img_play.png
+    - assets/fonts/ManropeBold.ttf
+    - assets/fonts/TajawalBold.ttf

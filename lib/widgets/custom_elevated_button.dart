@@ -59,9 +59,12 @@ class CustomElevatedButton extends BaseButton {
             children: [
               leftIcon ?? const SizedBox.shrink(),
               Text(
-                text,
-                style: buttonTextStyle ?? theme.textTheme.headlineSmall,
+                 text,
+                 style: (buttonTextStyle ?? theme.textTheme.headlineSmall)?.copyWith(
+                 fontFamily: 'TajawalBold', // Custom font family
+                 ),
               ),
+
               rightIcon ?? const SizedBox.shrink(),
             ],
           ),

@@ -113,6 +113,9 @@ class PrimaryColors {
   // Gray
   Color get gray100 => Color(0XFFF5F7F5);
   Color get gray800 => Color(0XFF393B3C);
+
+  // LightGreen
+  Color get white => Color(0xFFF5F7F5);
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();

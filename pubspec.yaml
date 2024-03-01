@@ -26,5 +26,16 @@ flutter:
     - assets/images/side-menu-icon.png
     - assets/images/img_growth_1.png
     - assets/images/img_play.png
-    - assets/fonts/ManropeBold.ttf
-    - assets/fonts/TajawalBold.ttf
+    - assets/images/document-text.png
+    - assets/images/money-recive.png
+    - assets/images/wallet-check.png
+    - assets/images/home-icon.png
+    - assets/images/logo-general-organization-for-social-insurance.png
+
+  fonts:
+    - family: ManropeBold
+      fonts:
+        - asset: assets/fonts/ManropeBold.ttf
+    - family: TajawalBold
+      fonts:
+        - asset: assets/fonts/TajawalBold.ttf

@@ -5,7 +5,6 @@ import 'package:gosi_hakathon_madmun_app/widgets/app_bar/appbar_image.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
-import 'package:gosi_hakathon_madmun_app/theme/theme_helper.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_list_item.dart';
 
 

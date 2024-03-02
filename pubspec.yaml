@@ -39,7 +39,11 @@ flutter:
     - assets/images/warning.png
     - assets/images/target-progress.png
     - assets/images/duration-progress.png
-
+    - assets/images/moneys_icon.png
+    - assets/images/period_icon.png
+    - assets/images/reason_icon.png
+    - assets/images/saving_icon.png
+    - assets/images/target_icon.png
 
   fonts:
     - family: ManropeBold

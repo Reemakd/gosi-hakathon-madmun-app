@@ -38,5 +38,16 @@ class ImageConstant {
 
   static String imgDuration = '$imagePath/duration-progress.png';
 
+  static String moneysIcon = '$imagePath/moneys_icon.png';
+
+  static String periodIcon = '$imagePath/period_icon.png';
+
+  static String reasonIcon = '$imagePath/reason_icon.png';
+
+  static String savingIcon = '$imagePath/saving_icon.png';
+
+  static String targetIcon = '$imagePath/target_icon.png';
+
+
 
 }

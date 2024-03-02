@@ -1,3 +1,4 @@
+import 'package:gosi_hakathon_madmun_app/view/smart_prediction_dialog.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/app_bar/custom_app_bar.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/app_bar/appbar_leading_image.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/app_bar/appbar_title.dart';
@@ -62,6 +63,7 @@ class HomePage extends StatelessWidget {
                         decoration: CustomButtonStyles
                             .gradientPrimaryToOnPrimaryDecoration,
                         alignment: Alignment.topLeft,
+                        onPressed: () => SmartPredictionDialog.showSmartPredictionDialog(context)
                       ),
                       // Image in the bottom right corner
                       Padding(

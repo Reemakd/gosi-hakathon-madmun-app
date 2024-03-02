@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           theme: theme,
           title: 'gosi_hakathon_madmun_app',
           debugShowCheckedModeBanner: false,
-          initialRoute: AppRoutes.savingScreen,
+          initialRoute: AppRoutes.splashScreen,
           routes: AppRoutes.routes,
         );
       },

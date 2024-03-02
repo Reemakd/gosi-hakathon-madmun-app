@@ -44,6 +44,10 @@ flutter:
     - assets/images/reason_icon.png
     - assets/images/saving_icon.png
     - assets/images/target_icon.png
+    - assets/images/saving.png
+    - assets/images/investment.png
+    - assets/images/ai.png
+
 
   fonts:
     - family: ManropeBold
@@ -57,3 +61,4 @@ flutter:
     - family: TajawalMedium
       fonts:
         - asset: assets/fonts/TajawalMedium.ttf
+

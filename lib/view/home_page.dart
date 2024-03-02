@@ -6,6 +6,7 @@ import 'package:gosi_hakathon_madmun_app/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_list_item.dart';
+import 'package:gosi_hakathon_madmun_app/widgets/custom_side_menu.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: _buildAppBar(context),
-        drawer: _buildDrawer(context), 
+        drawer: const CustomSideMenu(), 
         body: SizedBox(
           width: double.maxFinite,
           child: Column(
@@ -118,48 +119,5 @@ class HomePage extends StatelessWidget {
   }
 }
 
-Drawer _buildDrawer(BuildContext context) {
-  return Drawer(
-    child: Container(
-      width: MediaQuery.of(context).size.width * 0.25, 
-      color: appTheme.white,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SizedBox(height: 20), 
-          // List Items
-          Expanded(
-            child: ListView(
-              shrinkWrap: true, 
-              children: [
-                CustomListItem(title: "الرئيسية", iconPath: ImageConstant.imageHomeIcon, onTap: () {
-                  Navigator.pop(context); // Close drawer
-                }),
-                CustomListItem(title: "مدخراتي", iconPath: ImageConstant.imageEdikharIcon, onTap: () {
-                  Navigator.pop(context); // Close drawer
-                }),
-                CustomListItem(title: "استثماراتي", iconPath: ImageConstant.imageEstithmarIcon, onTap: () {
-                  Navigator.pop(context); // Close drawer
-                }),
-                CustomListItem(title: "دليلك", iconPath: ImageConstant.imageDocumentIcon, onTap: () {
-                  Navigator.pop(context); // Close drawer
-                }),
-              ],
-            ),
-          ),
-          // Bottom Logo Image
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0),
-            child: Image.asset(
-              ImageConstant.imageGosiLogo, 
-              height: 40,
-              width: 40,
-              fit: BoxFit.contain,
-            ),
-          ),
-        ],
-      ),
-    ),
-  );
-}
+
 

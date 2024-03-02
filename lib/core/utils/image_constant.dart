@@ -30,4 +30,13 @@ class ImageConstant {
 
   static String imgChatpot = '$imagePath/chatpot.png';
 
+  static String imgWarning = '$imagePath/warning.png';
+
+  static String imgWallet = '$imagePath/wallet.png';
+
+  static String imgTarget = '$imagePath/target-progress.png';
+
+  static String imgDuration = '$imagePath/duration-progress.png';
+
+
 }

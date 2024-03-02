@@ -35,12 +35,21 @@ flutter:
     - assets/images/img_financial_growth.png
     - assets/images/img_growth_2.png
     - assets/images/chatpot.png
+    - assets/images/wallet.png
+    - assets/images/warning.png
+    - assets/images/target-progress.png
+    - assets/images/duration-progress.png
 
 
   fonts:
     - family: ManropeBold
       fonts:
         - asset: assets/fonts/ManropeBold.ttf
+
     - family: TajawalBold
       fonts:
         - asset: assets/fonts/TajawalBold.ttf
+
+    - family: TajawalMedium
+      fonts:
+        - asset: assets/fonts/TajawalMedium.ttf

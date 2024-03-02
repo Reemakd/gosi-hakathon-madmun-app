@@ -25,7 +25,7 @@ class AppbarImage extends StatelessWidget {
         onTap!.call();
       },
       child: Padding(
-        padding: margin ?? EdgeInsets.zero,
+        padding: const EdgeInsets.only(top: 10),
         child: CustomImageView(
           imagePath: imagePath,
           height: 50.v,

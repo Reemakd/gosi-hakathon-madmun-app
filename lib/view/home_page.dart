@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: _buildAppBar(context),
-        drawer: _buildDrawer(context), // New drawer widget
+        drawer: _buildDrawer(context), 
         body: SizedBox(
           width: double.maxFinite,
           child: Column(
@@ -62,6 +62,16 @@ class HomePage extends StatelessWidget {
                             .gradientPrimaryToOnPrimaryDecoration,
                         alignment: Alignment.topLeft,
                       ),
+                      // Image in the bottom right corner
+                      Padding(
+                      padding: const EdgeInsets.only(right: 10, bottom: 10),
+                      child: CustomImageView(
+                         imagePath: ImageConstant.imgChatpot,
+                         height: 80,
+                         width: 80,
+                         alignment: Alignment.bottomRight,
+                      ),
+                      ),
                     ],
                   ),
                 ),
@@ -100,7 +110,7 @@ class HomePage extends StatelessWidget {
             borderRadius: BorderRadiusStyle.circleBorder24,
           ),
           child: AppbarImage(
-            imagePath: ImageConstant.imgPlay,
+            imagePath: ImageConstant.imgUserIcon,
           ),
         ),
       ],

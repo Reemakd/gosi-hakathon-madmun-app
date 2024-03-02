@@ -166,14 +166,14 @@ Widget _buildStackItem({
       children: [
         SizedBox(
           height: 100.v,
-          width: 100.h,
+          width: 120.h,
           child: Stack(
             alignment: Alignment.center,
             children: [
               CustomImageView(
                 imagePath: imagePath,
                 height: 100.v,
-                width: 93.h,
+                width: 100.h,
                 alignment: Alignment.center,
               ),
             ],
@@ -184,6 +184,7 @@ Widget _buildStackItem({
           label,
           style: theme.textTheme.titleMedium?.copyWith(
             color: Colors.white,
+            fontFamily: 'TajawalBold', // Custom font family
         ),
         ),
       ],

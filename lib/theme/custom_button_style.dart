@@ -11,6 +11,8 @@ class CustomButtonStyles {
         ),
       );
 
+  
+
   // Gradient button style
   static BoxDecoration get gradientPrimaryToOnPrimaryDecoration =>
       BoxDecoration(
@@ -30,3 +32,5 @@ class CustomButtonStyles {
         elevation: MaterialStateProperty.all<double>(0),
       );
 }
+
+

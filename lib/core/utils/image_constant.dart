@@ -48,6 +48,17 @@ class ImageConstant {
 
   static String targetIcon = '$imagePath/target_icon.png';
 
+  static String imgArrowDown = '$imagePath/img_arrow_down.svg';
+
+  static String imgPlay = '$imagePath/img_play.png';
+
+  static String imgGroup1 = '$imagePath/img_group_1.svg';
+
+  static String imgVideoCamera = '$imagePath/img_video_camera.svg';
+
+  static String imgCheckmark = '$imagePath/img_checkmark.svg';
+
+
 
 
 }

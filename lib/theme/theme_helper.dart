@@ -62,6 +62,11 @@ class ThemeHelper {
           padding: EdgeInsets.zero,
         ),
       ),
+       dividerTheme: DividerThemeData(
+        thickness: 5,
+        space: 5,
+        color: colorScheme.errorContainer,
+      ),
     );
   }
 
@@ -87,6 +92,32 @@ class TextThemes {
           fontFamily: 'Manrope',
           fontWeight: FontWeight.w700,
         ),
+
+        bodyMedium: TextStyle(
+          color: colorScheme.onPrimaryContainer.withOpacity(0.53),
+          fontSize: 14.fSize,
+          fontFamily: 'Tajawal',
+          fontWeight: FontWeight.w400,
+        ),
+        labelLarge: TextStyle(
+          color: appTheme.black900,
+          fontSize: 12.fSize,
+          fontFamily: 'Tajawal',
+          fontWeight: FontWeight.w500,
+        ),
+        
+        titleMedium: TextStyle(
+          color: appTheme.black900,
+          fontSize: 16.fSize,
+          fontFamily: 'Tajawal',
+          fontWeight: FontWeight.w700,
+        ),
+        titleSmall: TextStyle(
+          color: colorScheme.primaryContainer,
+          fontSize: 14.fSize,
+          fontFamily: 'Tajawal',
+          fontWeight: FontWeight.w700,
+        ),
       );
 }
 
@@ -99,6 +130,17 @@ class ColorSchemes {
     // On colors(text colors)
     onPrimary: Color(0XFF183630),
     onPrimaryContainer: Color(0XFFFFFFFF),
+
+     // Primary colors
+   // primary: Color(0XFF004433),
+    primaryContainer: Color(0XFF8E8E8E),
+
+    // Error colors
+    errorContainer: Color(0XFF5F6060),
+
+    // On colors(text colors)
+   // onPrimary: Color(0XFFFFFFFF),
+   // onPrimaryContainer: Color(0XFF15131F),
   );
 }
 
@@ -129,6 +171,8 @@ class PrimaryColors {
   // Color get teal200 => Color.fromARGB(255, 202, 216, 213);
   Color get teal400 => Color(0xff469c8b);
   Color get teal900 => Color(0xff1f4c41);
+  Color get teal4004c => Color(0X4C469C8B);
+
 
   // White
   Color get whiteA700 => Color(0XFFFFFFFF);

@@ -19,6 +19,15 @@ class AppDecoration {
         color: appTheme.whiteA700,
       );
 
+  static BoxDecoration get fillOnPrimary => BoxDecoration(
+        color: theme.colorScheme.onPrimary,
+      );
+  
+  static BoxDecoration get fillTealC => BoxDecoration(
+        color: appTheme.teal4004c,
+      );
+
+
   // Gradient decorations
   static BoxDecoration get gradientBlueGrayToTeal => BoxDecoration(
         gradient: LinearGradient(
@@ -27,6 +36,15 @@ class AppDecoration {
          begin: Alignment.bottomCenter,
          end: Alignment.topCenter,
        )
+      );
+    
+
+  static BoxDecoration get outlinePrimary => BoxDecoration(
+        color: theme.colorScheme.onPrimary.withOpacity(0.28),
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 1.h,
+        ),
       );
 }
 
@@ -47,6 +65,18 @@ class BorderRadiusStyle {
   // Rounded borders
   static BorderRadius get roundedBorder8 => BorderRadius.circular(
         8.h,
+      );
+}
+
+class BorderRadiusStyle1 {
+  // Circle borders
+  static BorderRadius get circleBorder24 => BorderRadius.circular(
+        24.h,
+      );
+
+  // Rounded borders
+  static BorderRadius get roundedBorder13 => BorderRadius.circular(
+        13.h,
       );
 }
 

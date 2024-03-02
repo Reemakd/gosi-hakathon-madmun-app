@@ -6,8 +6,11 @@ import 'package:gosi_hakathon_madmun_app/widgets/app_bar/appbar_image.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
-import 'package:gosi_hakathon_madmun_app/widgets/custom_list_item.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_side_menu.dart';
+import 'package:gosi_hakathon_madmun_app/view/Estithmar.dart';
+import 'package:gosi_hakathon_madmun_app/view/Edkhar.dart';
+
+
 
 
 class HomePage extends StatelessWidget {
@@ -33,6 +36,8 @@ class HomePage extends StatelessWidget {
                   left: 27.h,
                   right: 23.h,
                 ),
+            onPressed: () => Edkhar.openModalBottomSheet1(context)
+
               ),
               SizedBox(height: 56.v),
               Align(
@@ -49,12 +54,16 @@ class HomePage extends StatelessWidget {
                         width: 309.h,
                         alignment: Alignment.bottomRight,
                       ),
-                      CustomElevatedButton(
-                        width: 343.h,
-                        text: "استثمار",
-                        buttonStyle: CustomButtonStyles.fillPrimary,
-                        alignment: Alignment.topLeft,
-                      ),
+                      CustomElevatedButton(  
+                      width:343.h,
+                       text: "استثمار",
+                  //    margin: EdgeInsets.only(top: 139.v),  
+                       buttonStyle: CustomButtonStyles.fillPrimary, 
+                    //   decoration: CustomButtonStyles.fillPrimary,
+                       onPressed: () => Estithmar.openModalBottomSheet(context)
+                          ),
+
+ 
                       CustomElevatedButton(
                         width: 343.h,
                         text: "التنبؤ الذكي",

@@ -9,18 +9,12 @@ class Edkhar extends StatelessWidget {
 //  Edkhar({Key? key}) : super(key: key);
 
   static List<String> dropdownItemList = [
-    "Item One",
-    "Item Two",
-    "Item Three",
+    "شراء سيارة",
+    "شراء منزل",
+    "اخرى",
   ];
 
  static TextEditingController zipcodeController = TextEditingController();
-
- static List<String> dropdownItemList1 = [
-    "Item One",
-    "Item Two",
-    "Item Three",
-  ];
 
   static void openModalBottomSheet1(BuildContext context) {
     showModalBottomSheet(
@@ -85,7 +79,7 @@ class Edkhar extends StatelessWidget {
                           TextSpan(
                             text:
                                 "حدد المبلغ المستقطع من الشهر القادم",
-                            style: CustomTextStyles.titleSmallff000000,
+                            style:  _tajawalTextStyle(),
                           ),
                           TextSpan(
                             text: "*",
@@ -99,54 +93,14 @@ class Edkhar extends StatelessWidget {
                 ),
                 SizedBox(height: 18.v),
                 _buildTwo(context),
-                SizedBox(height: 31.v),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Padding(
-                    padding: EdgeInsets.only(right: 3.h),
-                    child: RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(
-                            text: "حدد مجال الادخار",
-                            style: CustomTextStyles.titleSmallff000000,
-                          ),
-                          TextSpan(
-                            text: "*",
-                            style: CustomTextStyles.titleSmallffbd2f2f,
-                          ),
-                        ],
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                ),
-                SizedBox(height: 9.v),
-                CustomDropDown(
-                  hintText: "اختر",
-                  items: dropdownItemList1,
-                  prefix: Container(
-                    margin: EdgeInsets.fromLTRB(
-                      8.h,
-                      15.v,
-                      30.h,
-                      15.v,
-                    ),
-                    child: CustomImageView(
-                      imagePath: ImageConstant.imgCheckmark,
-                      height: 24.adaptSize,
-                      width: 24.adaptSize,
-                    ),
-                  ),
-                  prefixConstraints: BoxConstraints(
-                    maxHeight: 54.v,
-                  ),
-                  onChanged: (value) {},
-                ),
+
                 SizedBox(height: 37.v),
                 CustomElevatedButton(
                   text: "ادخر",
+                  height: 60,
+                  width: 250 ,
                   margin: EdgeInsets.symmetric(horizontal: 3.h),
+                  buttonTextStyle:  _tajawalTextStyle2(),
                   onPressed: () => HomePage(),
                 ),
                 SizedBox(height: 30.v),
@@ -276,6 +230,24 @@ class Edkhar extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+      static TextStyle _tajawalTextStyle() {
+    return const TextStyle(
+      fontSize: 15.0,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'TajawalBold',
+      color: Color.fromARGB(255, 0, 0, 0)
+    );
+  }
+
+      static TextStyle _tajawalTextStyle2() {
+    return const TextStyle(
+      fontSize: 17.0,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'TajawalBold',
+      color: Color.fromARGB(255, 255, 255, 255)
     );
   }
 }

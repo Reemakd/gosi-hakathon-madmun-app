@@ -29,7 +29,7 @@ class AppbarTitle extends StatelessWidget {
         child: Text(
           text,
           style: TextStyle(
-                  fontFamily: 'ManropeBold',
+                  fontFamily: 'TajawalMedium',
                   fontSize: 20, // Adjust text size as needed
                 ),
         ),

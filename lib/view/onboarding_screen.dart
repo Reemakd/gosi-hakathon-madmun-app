@@ -79,6 +79,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             fontFamily: "TajawalBold",
                             fontWeight: FontWeight.w600,
                             fontSize: (width <= 550) ? 30 : 35,
+                            color: Color.fromARGB(255, 0, 0, 0)
+                            
                           ),
                         ),
                         const SizedBox(height: 15),

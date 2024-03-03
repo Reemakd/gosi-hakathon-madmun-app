@@ -9,17 +9,17 @@ class Estithmar extends StatelessWidget {
 //  Estithmar({Key? key}) : super(key: key);
 
   static List<String> dropdownItemList = [
-    "Item One",
-    "Item Two",
-    "Item Three",
+    "شراء سيارة",
+    "شراء منزل",
+    "اخرى",
   ];
 
  static TextEditingController zipcodeController = TextEditingController();
 
  static List<String> dropdownItemList1 = [
-    "Item One",
-    "Item Two",
-    "Item Three",
+    "المجال الصحي",
+    "المجال التقني",
+    "المجال الصناعي",
   ];
 
   static void openModalBottomSheet(BuildContext context) {
@@ -41,18 +41,18 @@ class Estithmar extends StatelessWidget {
                 ),
                 SizedBox(height: 26.v),
                 _buildWidget(context),
-                SizedBox(height: 27.v),
+                SizedBox(height: 20.v),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
                     padding: EdgeInsets.only(right: 3.h),
                     child: Text(
                       "حدد الهدف من الاستثمار",
-                      style: CustomTextStyles.titleSmallBlack900,
+                      style: _tajawalTextStyle(),
                     ),
                   ),
                 ),
-                SizedBox(height: 12.v),
+                SizedBox(height: 10.v),
                 CustomDropDown(
                   hintText: "اختر",
                   items: dropdownItemList,
@@ -74,7 +74,7 @@ class Estithmar extends StatelessWidget {
                   ),
                   onChanged: (value) {},
                 ),
-                SizedBox(height: 40.v),
+                SizedBox(height: 10.v),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
@@ -85,7 +85,7 @@ class Estithmar extends StatelessWidget {
                           TextSpan(
                             text:
                                 "حدد المبلغ المستقطع من الشهر القادم",
-                            style: CustomTextStyles.titleSmallff000000,
+                            style: _tajawalTextStyle(),
                           ),
                           TextSpan(
                             text: "*",
@@ -99,7 +99,7 @@ class Estithmar extends StatelessWidget {
                 ),
                 SizedBox(height: 18.v),
                 _buildTwo(context),
-                SizedBox(height: 31.v),
+                SizedBox(height: 10.v),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
@@ -109,7 +109,7 @@ class Estithmar extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: "حدد مجال الاستثمار",
-                            style: CustomTextStyles.titleSmallff000000,
+                            style: _tajawalTextStyle(),
                           ),
                           TextSpan(
                             text: "*",
@@ -121,7 +121,7 @@ class Estithmar extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 9.v),
+                SizedBox(height: 10.v),
                 CustomDropDown(
                   hintText: "اختر",
                   items: dropdownItemList1,
@@ -146,7 +146,12 @@ class Estithmar extends StatelessWidget {
                 SizedBox(height: 37.v),
                 CustomElevatedButton(
                   text: "استثمر",
+                  buttonTextStyle:  _tajawalTextStyle2(),
+                  height: 60,
+                  width: 250 ,
+                  
                   margin: EdgeInsets.symmetric(horizontal: 3.h),
+                  
                  onPressed: () => HomePage(),
                 ),
                 SizedBox(height: 30.v),
@@ -276,6 +281,24 @@ class Estithmar extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+    static TextStyle _tajawalTextStyle() {
+    return const TextStyle(
+      fontSize: 15.0,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'TajawalBold',
+      color: Color.fromARGB(255, 0, 0, 0)
+    );
+  }
+
+      static TextStyle _tajawalTextStyle2() {
+    return const TextStyle(
+      fontSize: 17.0,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'TajawalBold',
+      color: Color.fromARGB(255, 255, 255, 255)
     );
   }
 }

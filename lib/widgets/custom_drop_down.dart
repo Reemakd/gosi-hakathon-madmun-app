@@ -109,9 +109,9 @@ class CustomDropDown extends StatelessWidget {
         isDense: true,
         contentPadding: contentPadding ??
             EdgeInsets.only(
-              top: 18.v,
-              right: 16.h,
-              bottom: 18.v,
+              top: 2.v,
+              right: 2.h,
+              bottom: 2.v,
             ),
         fillColor: fillColor ?? theme.colorScheme.onPrimary.withOpacity(0.28),
         filled: filled,

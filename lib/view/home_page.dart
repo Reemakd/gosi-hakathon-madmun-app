@@ -76,7 +76,9 @@ class HomePage extends StatelessWidget {
                         onPressed: () => SmartPredictionDialog.showSmartPredictionDialog(context)
                       ),
 
-                      CustomElevatedButton(
+                      Padding(
+                        padding: const EdgeInsets.only(right: 2, bottom: 20),
+                        child: CustomElevatedButton(
                       width: 70.h,
                       height: 70.v,
                       text: "", 
@@ -92,6 +94,8 @@ class HomePage extends StatelessWidget {
                       ),
                       onPressed: () => chatBot.openChatScreen(context),
                     ),
+                      )
+                    
                       // Image in the bottom right corner
                       /*Padding(
                       padding: const EdgeInsets.only(right: 10, bottom: 10),

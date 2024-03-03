@@ -62,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 itemCount: contents.length,
                 itemBuilder: (context, i) {
                   return Padding(
-                    padding: const EdgeInsets.all(40.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Column(
                       children: [
                         Image.asset(
@@ -85,10 +85,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         Text(
                           contents[i].desc,
                           style: TextStyle(
-                            fontFamily: "TajawalMedium",
-                            fontWeight: FontWeight.w300,
-                            fontSize: (width <= 550) ? 17 : 25,
-                          ),
+                              fontFamily: "TajawalMedium",
+                              fontWeight: FontWeight.w300,
+                              fontSize: (width <= 550) ? 17 : 25,
+                              color: Color.fromARGB(255, 0, 0, 0)),
                           textAlign: TextAlign.center,
                         )
                       ],
@@ -115,20 +115,30 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ? Padding(
                           padding: const EdgeInsets.all(30),
                           child: ElevatedButton(
-                            onPressed: () {Navigator.pushReplacementNamed(context, AppRoutes.homePage);},
-                            child: const Text("ابدا", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+                            onPressed: () {
+                              Navigator.pushReplacementNamed(
+                                  context, AppRoutes.homePage);
+                            },
+                            child: const Text(
+                              "ابدأ",
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 255, 255, 255)),
+                            ),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0XFF183630),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5),
                               ),
-                              padding: (width <= 550)
-                                  ? const EdgeInsets.symmetric(
-                                      horizontal: 200, vertical: 30)
-                                  : EdgeInsets.symmetric(
-                                      horizontal: width * 0.2, vertical: 35),
-                              textStyle:
-                                  TextStyle(fontSize: (width <= 550) ? 16 : 17, fontFamily: "TajawalBold"),
+                              padding: EdgeInsets.symmetric(
+                                horizontal:
+                                    60, // Adjust horizontal padding as needed
+                                vertical:
+                                    30, // Adjust vertical padding as needed
+                              ),
+                              textStyle: TextStyle(
+                                fontSize: 20,
+                                fontFamily: "TajawalBold",
+                              ),
                             ),
                           ),
                         )
@@ -144,7 +154,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                     curve: Curves.easeIn,
                                   );
                                 },
-                                child: const Text("التالي", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
+                                child: const Text(
+                                  "التالي",
+                                  style: TextStyle(
+                                      color:
+                                          Color.fromARGB(255, 255, 255, 255)),
+                                ),
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Color(0XFF183630),
                                   shape: RoundedRectangleBorder(
@@ -157,7 +172,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                       : const EdgeInsets.symmetric(
                                           horizontal: 30, vertical: 35),
                                   textStyle: TextStyle(
-                                      fontSize: (width <= 550) ? 13 : 17, fontFamily: "TajawalBold"),
+                                      fontSize: (width <= 550) ? 13 : 17,
+                                      fontFamily: "TajawalBold"),
                                 ),
                               ),
                               TextButton(
@@ -166,13 +182,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 },
                                 child: const Text(
                                   "تخطي",
-                                  style: TextStyle(color: Colors.black, fontFamily: "TajawalBold",),
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: "TajawalBold",
+                                  ),
                                 ),
                                 style: TextButton.styleFrom(
                                   elevation: 0,
                                   textStyle: TextStyle(
                                     fontWeight: FontWeight.w600,
-                                    fontSize: (width <= 550) ? 14: 17,
+                                    fontSize: (width <= 550) ? 14 : 17,
                                   ),
                                 ),
                               ),

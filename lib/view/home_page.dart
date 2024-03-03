@@ -9,6 +9,7 @@ import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_side_menu.dart';
 import 'package:gosi_hakathon_madmun_app/view/Estithmar.dart';
 import 'package:gosi_hakathon_madmun_app/view/Edkhar.dart';
+import 'package:gosi_hakathon_madmun_app/view/chatBot.dart';
 
 
 
@@ -74,8 +75,25 @@ class HomePage extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         onPressed: () => SmartPredictionDialog.showSmartPredictionDialog(context)
                       ),
+
+                      CustomElevatedButton(
+                      width: 70.h,
+                      height: 70.v,
+                      text: "", 
+                      margin: EdgeInsets.only(top: 139.v, right: 20),
+                      buttonStyle: CustomButtonStyles.none,
+                      alignment: Alignment.bottomRight,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/chatbot-2.png"), 
+                          //fit: BoxFit.cover,
+                        ),
+                      ),
+                      onPressed: () => chatBot.openChatScreen(context),
+                    ),
                       // Image in the bottom right corner
-                      Padding(
+                      /*Padding(
                       padding: const EdgeInsets.only(right: 10, bottom: 10),
                       child: CustomImageView(
                          imagePath: ImageConstant.imgChatpot,
@@ -83,7 +101,7 @@ class HomePage extends StatelessWidget {
                          width: 80,
                          alignment: Alignment.bottomRight,
                       ),
-                      ),
+                      ),*/
                     ],
                   ),
                 ),

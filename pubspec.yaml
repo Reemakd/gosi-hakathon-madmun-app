@@ -47,6 +47,7 @@ flutter:
     - assets/images/saving.png
     - assets/images/investment.png
     - assets/images/ai.png
+    - assets/images/chatbot-2.png
 
 
   fonts:

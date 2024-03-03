@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/app_export.dart';
+import 'package:gosi_hakathon_madmun_app/view/home_page.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_drop_down.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_text_form_field.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_elevated_button.dart';
@@ -146,6 +147,7 @@ class Edkhar extends StatelessWidget {
                 CustomElevatedButton(
                   text: "ادخر",
                   margin: EdgeInsets.symmetric(horizontal: 3.h),
+                  onPressed: () => HomePage(),
                 ),
                 SizedBox(height: 30.v),
               ],

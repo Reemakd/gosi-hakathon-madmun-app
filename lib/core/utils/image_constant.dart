@@ -58,6 +58,7 @@ class ImageConstant {
 
   static String imgCheckmark = '$imagePath/img_checkmark.svg';
 
+  static String imgChatbot2 = '$imagePath/chatbot-2.png';
 
 
 

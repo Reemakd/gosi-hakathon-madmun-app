@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // Future.delayed to wait for 6 seconds
     Future.delayed(Duration(seconds: 4), () {
       // After 6 seconds, navigate to the home page 
-      Navigator.pushReplacementNamed(context, AppRoutes.onboardingScreen);
+      Navigator.pushReplacementNamed(context, AppRoutes.homePage);
     });
   }
 

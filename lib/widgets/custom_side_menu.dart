@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gosi_hakathon_madmun_app/core/utils/image_constant.dart';
 import 'package:gosi_hakathon_madmun_app/theme/theme_helper.dart';
 import 'package:gosi_hakathon_madmun_app/view/home_page.dart';
+import 'package:gosi_hakathon_madmun_app/view/investment_screen.dart';
+import 'package:gosi_hakathon_madmun_app/view/onboarding_screen.dart';
 import 'package:gosi_hakathon_madmun_app/view/saving_screen.dart';
 import 'package:gosi_hakathon_madmun_app/widgets/custom_list_item.dart';
 
@@ -54,14 +56,24 @@ Widget build(BuildContext context) {
                   title: "استثماراتي",
                   iconPath: ImageConstant.imageEstithmarIcon,
                   onTap: () {
-                    Navigator.pop(context); // Close drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const InvestmentScreen(),
+                      ),
+                    );
                   },
                 ),
                 CustomListItem(
                   title: "دليلك",
                   iconPath: ImageConstant.imageDocumentIcon,
                   onTap: () {
-                    Navigator.pop(context); // Close drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const OnboardingScreen(),
+                      ),
+                    );
                   },
                 ),
               ],

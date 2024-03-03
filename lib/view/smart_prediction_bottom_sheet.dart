@@ -28,13 +28,14 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Image.asset('assets/images/saving_icon.png', height: 50),
-                      SizedBox(width: 10),
+                      SizedBox(width: 5),
                       const Text(
                         'الإدخار',
                         style: TextStyle(
                           fontSize: 25.0,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'TajawalBold',
+                          color: Color.fromARGB(255, 0, 0, 0),
                         ),
                       ),
                     ],
@@ -61,7 +62,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                               '2000 - %10',
                               style: _tajawalTextStyle2(),
                             ),
-                            SizedBox(width: 5),
+                            SizedBox(width: 4),
                             Text(
                               'شهريًا',
                               style: _tajawalTextStyle2(),
@@ -70,7 +71,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 6),
+                    SizedBox(height: 4),
                     Container(
                       decoration: _listTileBoxDecoration(),
                       child: ListTile(
@@ -85,7 +86,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 6), // Spacing between tiles
+                    SizedBox(height: 4), // Spacing between tiles
                     Container(
                       decoration: _listTileBoxDecoration(),
                       child: ListTile(
@@ -100,7 +101,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 6), // Spacing between tiles
+                    SizedBox(height: 4), // Spacing between tiles
                     Container(
                       decoration: _listTileBoxDecoration(),
                       child: ListTile(
@@ -115,7 +116,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 9),
                     Padding(
                       padding:
                           EdgeInsets.all(5.0), // Add padding around the button
@@ -161,6 +162,7 @@ class SmartPredictionBottomSheet extends StatelessWidget {
       fontSize: 15.0,
       fontWeight: FontWeight.bold,
       fontFamily: 'TajawalBold',
+      color: Color.fromARGB(255, 0, 0, 0)
     );
   }
 
